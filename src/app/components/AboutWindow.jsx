@@ -6,7 +6,7 @@ const AboutWindow = () => {
     <div className={styles.cardContainer}>
       <div className="card">
         <div className={styles.aboutTitle}>About</div>
-        <div className="line"></div>
+        <div className={styles.line}></div>
         <div className={styles.cardHeader}>
           <h1 className={styles.heading}>Oscar Rapale Méndez</h1>
           <p>

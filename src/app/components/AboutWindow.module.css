@@ -12,13 +12,21 @@
     margin-left: 1rem;
 }
 
+.line 
+{
+  width: 80%;
+  height: 4px;
+  background-color: #5CF5CB;
+  opacity: 0.7;
+  margin-bottom: 20px;
+}
+
 .cardHeader{
     margin-left: 2rem;
 }
 
 .cardBody {
    margin-left: 2rem; 
-
 }
 
 .heading {
