@@ -6,6 +6,7 @@ const ProjectWindow = () => {
       <div className="projectTitle">Projects</div>
       <div className="cardBody">
         <div className="skills">
+          <h2>Skills</h2>
           <ul className="skillList">
             <li>HTML</li>
             <li>CSS</li>
@@ -22,6 +23,7 @@ const ProjectWindow = () => {
         </div>
 
         <div className="tools">
+          <h2>Tools</h2>
           <ul className="toolList">
             <li>Figma</li>
             <li>Canva</li>

@@ -1,0 +1,46 @@
+.cardContainer {
+    width: 45vw;
+    height: 50vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.aboutTitle {
+    padding: .7rem;
+    margin-left: 1rem;
+}
+
+.cardHeader{
+    margin-left: 2rem;
+}
+
+.cardBody {
+   margin-left: 2rem; 
+
+}
+
+.heading {
+    font-size: 1.7rem;
+}
+
+.subheading {
+    font-size: 1.3rem;
+}
+
+.skillList, .interestList {
+    margin-top: 1.5rem;
+    margin-left: 2rem;
+}
+
+.education, .interest {
+    margin-top: 2rem;
+}
+
+.interest {
+    margin-bottom: 2rem;
+}
+
+
+
