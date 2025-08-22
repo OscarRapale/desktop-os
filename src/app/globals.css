@@ -12,7 +12,7 @@
 
 body {
   color: var(--foreground);
-  background: #b164b3;
+  background: var(--background);
   font-family: var(--font-newrodinpro), Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
