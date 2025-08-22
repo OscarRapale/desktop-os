@@ -1,5 +1,5 @@
 .cardContainer {
-    width: 70vw;
+    width: 75vw;
     height: 60vh;
     overflow-y: auto;
     overflow-x: hidden;
@@ -94,7 +94,15 @@
 
 .projectImage {
     flex-shrink: 0;
+}
+
+.projectImage img {
     border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.projectImage img:hover {
+    transform: scale(1.2);
 }
 
 .projectContent {
