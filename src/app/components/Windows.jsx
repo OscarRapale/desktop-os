@@ -10,10 +10,13 @@ import {
   faGear,
   faEnvelope,
   faCircleXmark,
+  faLink,
 } from "@fortawesome/free-solid-svg-icons";
 import AboutWindow from "./AboutWindow";
 import ProjectWindow from "./ProjectWindow";
 import ContactWindow from "./ContactWindow";
+import { icon } from "@fortawesome/fontawesome-svg-core";
+import LinksWinodws from "./LinksWinodws";
 
 const Windows = () => {
   const [windows, setWindows] = useState({
@@ -30,6 +33,11 @@ const Windows = () => {
       id: "about",
       icon: <FontAwesomeIcon icon={faCircleInfo} />,
       content: <AboutWindow />,
+    },
+    {
+      id: "links",
+      icon: <FontAwesomeIcon icon={faLink} />,
+      content: <LinksWinodws />,
     },
     {
       id: "project",
