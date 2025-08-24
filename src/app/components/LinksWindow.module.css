@@ -17,7 +17,7 @@
   height: 45vh;
 }
 
-.linksTitle {
+.title {
     padding: .7rem;
     margin-left: 1rem;
     text-align: left;
@@ -52,5 +52,5 @@
 }
 
 .links:hover {
-    color: cadetblue;
+    color: cyan;
 }

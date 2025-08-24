@@ -5,7 +5,7 @@ const ContactWindow = () => {
   return (
     <div className={styles.cardContainer}>
       <div className="card">
-        <div className={styles.contactTitle}>Contact</div>
+        <div className={`${styles.title} title`}>Contact</div>
         <div className={styles.line}></div>
         <div className={styles.cardBody}>
           <div className={styles.cardText}>
@@ -16,7 +16,7 @@ const ContactWindow = () => {
             </p>
             <br />
             <p>
-              Message me on <a href="">LinkedIn</a> <br />
+              Message me on <a className={styles.link} href="">LinkedIn</a> <br />
               Or click the button below to send me an email.
             </p>
             <br />

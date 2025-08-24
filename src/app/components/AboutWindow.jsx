@@ -5,7 +5,7 @@ const AboutWindow = () => {
   return (
     <div className={styles.cardContainer}>
       <div className="card">
-        <div className={styles.aboutTitle}>About</div>
+        <div className={`${styles.title} title`}>About</div>
         <div className={styles.line}></div>
         <div className={styles.cardHeader}>
           <h1 className={styles.heading}>Oscar Rapale Méndez</h1>
@@ -19,7 +19,7 @@ const AboutWindow = () => {
           <div className="skills">
             <p>
               Hello World! I'm Oscar, a web developer and creative coder! <br />
-              As a Fullstack Developer specialized in Front-end work my skills
+              As a Fullstack Developer specialized in Frontend work my skills
               can cover:
             </p>
             <ul className={styles.skillList}>

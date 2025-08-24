@@ -15,8 +15,8 @@ import {
 import AboutWindow from "./AboutWindow";
 import ProjectWindow from "./ProjectWindow";
 import ContactWindow from "./ContactWindow";
-import { icon } from "@fortawesome/fontawesome-svg-core";
-import LinksWinodws from "./LinksWinodws";
+import LinksWindow from "./LinksWindow";
+import styles from "./HomeWindow.module.css";
 
 const Windows = () => {
   const [windows, setWindows] = useState({
@@ -37,7 +37,7 @@ const Windows = () => {
     {
       id: "links",
       icon: <FontAwesomeIcon icon={faLink} />,
-      content: <LinksWinodws />,
+      content: <LinksWindow />,
     },
     {
       id: "project",
@@ -59,26 +59,31 @@ const Windows = () => {
   };
 
   return (
-    <div className="container">
-      {windowData.map(
-        (window) =>
-          windows[window.id] && (
-            <Draggable key={window.id} nodeRef={nodeRef}>
-              <div className="windowContainer" ref={nodeRef}>
-                <button onClick={() => toggleWindow(window.id)}>
-                  <FontAwesomeIcon icon={faCircleXmark} />
-                </button>
-                {window.content}
-              </div>
-            </Draggable>
-          )
-      )}
+    <div className={styles.homeContainer}>
+      <div className="card">
+        <div className={styles.title}>Home</div>
+        <div className={styles.line}></div>
+        {windowData.map(
+          (window) =>
+            windows[window.id] && (
+              <Draggable key={window.id} handle=".title" nodeRef={nodeRef}>
+                <div className={styles.windowsContainer} ref={nodeRef}>
+                  <button onClick={() => toggleWindow(window.id)}>
+                    <FontAwesomeIcon icon={faCircleXmark} />
+                  </button>
+                  {window.content}
+                </div>
+              </Draggable>
+            )
+        )}
 
-      {windowData.map((window) => (
-        <button key={window.id} onClick={() => toggleWindow(window.id)}>
-          {window.icon}
-        </button>
-      ))}
+        {windowData.map((window) => (
+          <button className="icons" key={window.id} onClick={() => toggleWindow(window.id)}>
+            {window.icon}
+          </button>
+        ))}
+
+      </div>
     </div>
   );
 };

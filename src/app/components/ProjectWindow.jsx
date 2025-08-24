@@ -5,8 +5,8 @@ import styles from "./ProjectWindow.module.css";
 const ProjectWindow = () => {
   return (
     <div className={styles.cardContainer}>
-      <div className="card">
-        <div className={styles.projectTitle}>Projects</div>
+      <div className={"card"}>
+        <div className={`${styles.title} title`}>Projects</div>
         <div className={styles.line}></div>
         <div className={styles.cardBody}>
           <div className={styles.skills}>

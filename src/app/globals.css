@@ -39,6 +39,23 @@ a {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255,255,255,0.4) transparent;
+}
+
+.card::-webkit-scrollbar {
+  width: 8px;
+}
+
+.card::-webkit-scrollbar-track {
+  background: none;
+}
+
+.card::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.4);
+  border: 1px solid rgba(255,255,255,0.4);
+  border-radius: 5px;
 }
 
 @media (prefers-color-scheme: dark) {

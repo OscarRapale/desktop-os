@@ -5,7 +5,7 @@
     flex-direction: column;
 }
 
-.contactTitle {
+.title {
     padding: .7rem;
     margin-left: 1rem;
     text-align: left;
@@ -24,6 +24,14 @@
     text-align: center;
 }
 
+.link {
+    text-decoration: underline;
+}
+
+.link:hover {
+    color: cyan;
+}
+
 .emailBtn {
     border: 1px solid whitesmoke;
     border-radius: 10px;
@@ -34,6 +42,6 @@
 }
 
 .emailBtn:hover {
-    background-color: cadetblue;
+    background-color: rgba(0, 255, 255, 0.564);
     transform: scale(1.1);
 }

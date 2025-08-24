@@ -11,7 +11,7 @@ const LinksWinodws = () => {
   return (
     <div className={styles.cardContainer}>
       <div className={styles.card}>
-        <div className={styles.linksTitle}>Links</div>
+        <div className={`${styles.title} title`}>Links</div>
         <div className={styles.line}></div>
         <div className={styles.cardBody}>
           <ul className={styles.linkList}>
