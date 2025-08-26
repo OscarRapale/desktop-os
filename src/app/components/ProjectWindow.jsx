@@ -57,7 +57,8 @@ const ProjectWindow = () => {
                   elegant design, smooth animations, and comprehensive
                   responsive layouts. A tribute to the tv show "The Bear".{" "}
                   <br />
-                  <a href="">Visit The Line</a>
+                  <br />
+                  <p><a href="">Visit The Line</a></p>
                 </p>
               </div>
             </div>

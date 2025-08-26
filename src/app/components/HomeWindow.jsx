@@ -60,15 +60,21 @@ const Windows = () => {
 
   return (
     <div className={styles.homeContainer}>
-      <div className="card">
+      <div className={`${styles.card} card`}>
         <div className={styles.title}>Home</div>
         <div className={styles.line}></div>
+        <div className={styles.intro}>
+          <h1>
+            Hello World, <span>I'm Oscar!</span>
+          </h1>
+          <p>Fullstack Web Developer, Frontend Specialist, Creative Coder</p>
+        </div>
         {windowData.map(
           (window) =>
             windows[window.id] && (
               <Draggable key={window.id} handle=".title" nodeRef={nodeRef}>
                 <div className={styles.windowsContainer} ref={nodeRef}>
-                  <button onClick={() => toggleWindow(window.id)}>
+                  <button className={styles.closeBtn} onClick={() => toggleWindow(window.id)}>
                     <FontAwesomeIcon icon={faCircleXmark} />
                   </button>
                   {window.content}
@@ -77,12 +83,17 @@ const Windows = () => {
             )
         )}
 
-        {windowData.map((window) => (
-          <button className="icons" key={window.id} onClick={() => toggleWindow(window.id)}>
-            {window.icon}
-          </button>
-        ))}
-
+        <div className={styles.iconsContainer}>
+          {windowData.map((window) => (
+            <button
+              className={styles.icons}
+              key={window.id}
+              onClick={() => toggleWindow(window.id)}
+            >
+              {window.icon}
+            </button>
+          ))}
+        </div>
       </div>
     </div>
   );

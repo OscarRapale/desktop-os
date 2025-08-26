@@ -4,7 +4,7 @@ import styles from "./ContactWindow.module.css";
 const ContactWindow = () => {
   return (
     <div className={styles.cardContainer}>
-      <div className="card">
+      <div className={`${styles.card} card`}>
         <div className={`${styles.title} title`}>Contact</div>
         <div className={styles.line}></div>
         <div className={styles.cardBody}>

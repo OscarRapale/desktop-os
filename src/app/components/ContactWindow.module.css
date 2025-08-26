@@ -5,6 +5,10 @@
     flex-direction: column;
 }
 
+.card {
+    overflow-y: hidden;
+}
+
 .title {
     padding: .7rem;
     margin-left: 1rem;
