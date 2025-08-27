@@ -26,13 +26,20 @@ const Windows = () => {
     contact: false,
   });
 
+  const toggleWindow = (id) => {
+    setWindows((prevWindows) => ({
+      ...prevWindows,
+      [id]: !prevWindows[id],
+    }));
+  };
+
   const nodeRef = useRef(null);
 
   const windowData = [
     {
       id: "about",
       icon: <FontAwesomeIcon icon={faCircleInfo} />,
-      content: <AboutWindow />,
+      content: <AboutWindow handleWindow={toggleWindow} />,
     },
     {
       id: "links",
@@ -51,12 +58,7 @@ const Windows = () => {
     },
   ];
 
-  const toggleWindow = (id) => {
-    setWindows((prevWindows) => ({
-      ...prevWindows,
-      [id]: !prevWindows[id],
-    }));
-  };
+  
 
   return (
     <div className={styles.homeContainer}>
@@ -74,9 +76,6 @@ const Windows = () => {
             windows[window.id] && (
               <Draggable key={window.id} handle=".title" nodeRef={nodeRef}>
                 <div className={styles.windowsContainer} ref={nodeRef}>
-                  <button className={styles.closeBtn} onClick={() => toggleWindow(window.id)}>
-                    <FontAwesomeIcon icon={faCircleXmark} />
-                  </button>
                   {window.content}
                 </div>
               </Draggable>

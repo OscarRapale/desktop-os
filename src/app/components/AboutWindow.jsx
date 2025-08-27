@@ -1,11 +1,21 @@
 import React from "react";
 import styles from "./AboutWindow.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCircleXmark } from "@fortawesome/free-solid-svg-icons";
 
-const AboutWindow = () => {
+const AboutWindow = ({ handleWindow }) => {
   return (
     <div className={styles.cardContainer}>
       <div className="card">
-        <div className={`${styles.title} title`}>About</div>
+        <div className={`${styles.title} title`}>
+          About
+          <button
+            className={styles.closeBtn}
+            onClick={() => handleWindow("about")}
+          >
+            <FontAwesomeIcon icon={faCircleXmark} />
+          </button>
+        </div>
         <div className={styles.line}></div>
         <div className={styles.cardHeader}>
           <h1 className={styles.heading}>Oscar Rapale Méndez</h1>

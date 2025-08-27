@@ -1,9 +1,9 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import Windows from "./components/HomeWindow";
+import HomeWindow from "./components/HomeWindow";
 
 export default function Home() {
   return (
-    <Windows />
+    <HomeWindow />
   );
 }
