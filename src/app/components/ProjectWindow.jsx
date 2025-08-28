@@ -1,12 +1,22 @@
 import React from "react";
 import Image from "next/image";
 import styles from "./ProjectWindow.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCircleXmark } from "@fortawesome/free-solid-svg-icons";
 
-const ProjectWindow = () => {
+const ProjectWindow = ({ closeWindow }) => {
   return (
     <div className={styles.cardContainer}>
       <div className={"card"}>
-        <div className={`${styles.title} title`}>Projects</div>
+        <div className={`${styles.title} title`}>
+          Projects
+          <button
+            className={styles.closeBtn}
+            onClick={() => closeWindow("projects")}
+          >
+            <FontAwesomeIcon icon={faCircleXmark} />
+          </button>
+        </div>
         <div className={styles.line}></div>
         <div className={styles.cardBody}>
           <div className={styles.skills}>

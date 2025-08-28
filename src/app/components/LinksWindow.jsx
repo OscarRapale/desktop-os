@@ -5,13 +5,21 @@ import {
   faSquareLinkedin,
   faSquareGithub,
 } from "@fortawesome/free-brands-svg-icons";
-import { faAddressCard } from "@fortawesome/free-solid-svg-icons";
+import { faAddressCard, faCircleXmark } from "@fortawesome/free-solid-svg-icons";
 
-const LinksWinodws = () => {
+const LinksWinodws = ({ closeWindow }) => {
   return (
     <div className={styles.cardContainer}>
       <div className={styles.card}>
-        <div className={`${styles.title} title`}>Links</div>
+        <div className={`${styles.title} title`}>
+          Links
+          <button
+            className={styles.closeBtn}
+            onClick={() => closeWindow("links")}
+          >
+            <FontAwesomeIcon icon={faCircleXmark} />
+          </button>
+        </div>
         <div className={styles.line}></div>
         <div className={styles.cardBody}>
           <ul className={styles.linkList}>

@@ -65,6 +65,7 @@
 .icons {
     font-size: 4rem;
     transition: transform 0.3s ease;
+    cursor: pointer;
 }
 
 .icons:hover {

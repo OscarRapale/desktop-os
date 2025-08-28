@@ -3,13 +3,12 @@
 import React, { use, useState } from "react";
 import Draggable from "react-draggable";
 import { useRef } from "react";
-import { useSound } from "react-sounds";
+import useSound from "use-sound";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCircleInfo,
   faGear,
   faEnvelope,
-  faCircleXmark,
   faLink,
 } from "@fortawesome/free-solid-svg-icons";
 import AboutWindow from "./AboutWindow";
@@ -18,7 +17,7 @@ import ContactWindow from "./ContactWindow";
 import LinksWindow from "./LinksWindow";
 import styles from "./HomeWindow.module.css";
 
-const Windows = () => {
+const HomeWindow = () => {
   const [windows, setWindows] = useState({
     about: false,
     links: false,
@@ -26,11 +25,24 @@ const Windows = () => {
     contact: false,
   });
 
+  const [playOpen] = useSound("/sounds/open-window.mp3");
+  const [playClose] = useSound("/sounds/close-window.mp3");
+  const [playHover] = useSound("/sounds/button-hover.mp3");
+
   const toggleWindow = (id) => {
+    if (!windows[id]) {
+      playOpen();
+    } else {
+      playClose();
+    }
     setWindows((prevWindows) => ({
       ...prevWindows,
       [id]: !prevWindows[id],
     }));
+  };
+
+  const buttonHoverEffect = () => {
+    playHover();
   };
 
   const nodeRef = useRef(null);
@@ -39,26 +51,24 @@ const Windows = () => {
     {
       id: "about",
       icon: <FontAwesomeIcon icon={faCircleInfo} />,
-      content: <AboutWindow handleWindow={toggleWindow} />,
+      content: <AboutWindow closeWindow={toggleWindow} />,
     },
     {
       id: "links",
       icon: <FontAwesomeIcon icon={faLink} />,
-      content: <LinksWindow />,
+      content: <LinksWindow closeWindow={toggleWindow} />,
     },
     {
-      id: "project",
+      id: "projects",
       icon: <FontAwesomeIcon icon={faGear} />,
-      content: <ProjectWindow />,
+      content: <ProjectWindow closeWindow={toggleWindow} />,
     },
     {
       id: "contact",
       icon: <FontAwesomeIcon icon={faEnvelope} />,
-      content: <ContactWindow />,
+      content: <ContactWindow closeWindow={toggleWindow} />,
     },
   ];
-
-  
 
   return (
     <div className={styles.homeContainer}>
@@ -88,6 +98,7 @@ const Windows = () => {
               className={styles.icons}
               key={window.id}
               onClick={() => toggleWindow(window.id)}
+              onMouseEnter={buttonHoverEffect}
             >
               {window.icon}
             </button>
@@ -98,4 +109,4 @@ const Windows = () => {
   );
 };
 
-export default Windows;
+export default HomeWindow;

@@ -3,7 +3,7 @@ import styles from "./AboutWindow.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleXmark } from "@fortawesome/free-solid-svg-icons";
 
-const AboutWindow = ({ handleWindow }) => {
+const AboutWindow = ({ closeWindow }) => {
   return (
     <div className={styles.cardContainer}>
       <div className="card">
@@ -11,7 +11,7 @@ const AboutWindow = ({ handleWindow }) => {
           About
           <button
             className={styles.closeBtn}
-            onClick={() => handleWindow("about")}
+            onClick={() => closeWindow("about")}
           >
             <FontAwesomeIcon icon={faCircleXmark} />
           </button>

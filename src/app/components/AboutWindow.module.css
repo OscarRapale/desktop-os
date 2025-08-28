@@ -18,15 +18,23 @@
     z-index: 10;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding-left: 2rem;
 }
 
 .closeBtn {
     font-size: 1.5rem;
+    padding-right: 1.5rem;
     background: none;
     border: none;
     color: white;
     cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.closeBtn:hover {
+    color: rgb(222, 46, 46);
+    transform: scale(1.2);
 }
 
 .line 

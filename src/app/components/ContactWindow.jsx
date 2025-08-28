@@ -1,11 +1,21 @@
 import React from "react";
 import styles from "./ContactWindow.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCircleXmark } from "@fortawesome/free-solid-svg-icons";
 
-const ContactWindow = () => {
+const ContactWindow = ({ closeWindow }) => {
   return (
     <div className={styles.cardContainer}>
       <div className={`${styles.card} card`}>
-        <div className={`${styles.title} title`}>Contact</div>
+        <div className={`${styles.title} title`}>
+          Contact
+          <button
+            className={styles.closeBtn}
+            onClick={() => closeWindow("contact")}
+          >
+            <FontAwesomeIcon icon={faCircleXmark} />
+          </button>
+        </div>
         <div className={styles.line}></div>
         <div className={styles.cardBody}>
           <div className={styles.cardText}>
