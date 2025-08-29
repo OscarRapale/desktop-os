@@ -5,7 +5,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: rgb(45, 155, 229);
     --foreground: #ededed;
   }
 }
@@ -31,13 +31,13 @@ a {
 }
 
 .card {
-  background: rgba(255,255,255,0.25); /* Increased opacity for better coverage */
+  background: rgba(255,255,255,0.25);
   border-radius: 10px;
-  border: 1px solid rgba(255,255,255,0.25); /* Slightly more visible border */
+  border: 1px solid rgba(255,255,255,0.25);
   color: white;
-  backdrop-filter: blur(50px) saturate(2) !important; /* Should work now! */
+  backdrop-filter: blur(50px) saturate(2) !important;
   -webkit-backdrop-filter: blur(50px) saturate(2);
-  box-shadow: 0 15px 35px rgba(0,0,0,0.3); /* Deeper shadow for depth */
+  box-shadow: 0 15px 35px rgba(0,0,0,0.3);
   position: relative;
   overflow-y: scroll;
   overflow-x: hidden;

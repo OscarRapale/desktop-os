@@ -34,7 +34,7 @@ const HomeWindow = () => {
     setMounted(true);
   }, []);
 
-  const [audioEnabled, setAudioEnabled] = useState(false);
+  const [audioEnabled, setAudioEnabled] = useState(true);
 
   const [playOpen] = useSound("/sounds/open-window.mp3", {
     volume: audioEnabled ? 0.5 : 0,
