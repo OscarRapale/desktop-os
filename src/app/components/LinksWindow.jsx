@@ -5,12 +5,15 @@ import {
   faSquareLinkedin,
   faSquareGithub,
 } from "@fortawesome/free-brands-svg-icons";
-import { faAddressCard, faCircleXmark } from "@fortawesome/free-solid-svg-icons";
+import {
+  faAddressCard,
+  faCircleXmark,
+} from "@fortawesome/free-solid-svg-icons";
 
 const LinksWinodws = ({ closeWindow }) => {
   return (
     <div className={styles.cardContainer}>
-      <div className={styles.card}>
+      <div className={`${styles.card} card`}>
         <div className={`${styles.title} title`}>
           Links
           <button
@@ -24,18 +27,33 @@ const LinksWinodws = ({ closeWindow }) => {
         <div className={styles.cardBody}>
           <ul className={styles.linkList}>
             <li>
-              <a className={styles.links} href="">
+              <a
+                className={styles.links}
+                href="https://www.linkedin.com/in/oscar-rapale/"
+                target="_blank"
+              >
                 <FontAwesomeIcon icon={faSquareLinkedin} />
+                <div className={styles.linkTitles}>LinkedIn</div>
               </a>
             </li>
             <li>
-              <a className={styles.links} href="">
+              <a
+                className={styles.links}
+                href="https://github.com/OscarRapale"
+                target="_blank"
+              >
                 <FontAwesomeIcon icon={faSquareGithub} />
+                <div className={styles.linkTitles}>GitHub</div>
               </a>
             </li>
             <li>
-              <a className={styles.links} href="">
+              <a
+                className={styles.links}
+                href="https://oscar-rapale-web-developer.onrender.com"
+                target="_blank"
+              >
                 <FontAwesomeIcon icon={faAddressCard} />
+                <div className={styles.linkTitles}>Website</div>
               </a>
             </li>
           </ul>

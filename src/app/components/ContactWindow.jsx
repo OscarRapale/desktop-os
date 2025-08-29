@@ -26,7 +26,15 @@ const ContactWindow = ({ closeWindow }) => {
             </p>
             <br />
             <p>
-              Message me on <a className={styles.link} href="">LinkedIn</a> <br />
+              Message me on{" "}
+              <a
+                className={styles.link}
+                href="https://www.linkedin.com/in/oscar-rapale/"
+                target="_blank"
+              >
+                LinkedIn
+              </a>{" "}
+              <br />
               Or click the button below to send me an email.
             </p>
             <br />

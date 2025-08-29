@@ -6,15 +6,8 @@
 }
 
 .card {
-  background: rgba(255,255,255,0.4);
-  border-radius: 10px;
-  border: 1px solid rgba(255,255,255,0.4);
-  position: relative;
-  color: white;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
   height: 45vh;
+  overflow-y: hidden;
 }
 
 .title {
@@ -34,7 +27,7 @@
 
 .closeBtn {
     font-size: 1.5rem;
-    padding-right: 1.5rem;
+    margin-right: 1.5rem;
     background: none;
     border: none;
     color: white;
@@ -76,4 +69,10 @@
 
 .links:hover {
     color: cyan;
+}
+
+.linkTitles {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: -1rem;
 }

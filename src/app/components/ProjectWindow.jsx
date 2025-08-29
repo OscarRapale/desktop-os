@@ -70,7 +70,12 @@ const ProjectWindow = ({ closeWindow }) => {
                 </p>
                 <p className={styles.projectLinks}>
                   If you're a fan of The Bear like me,{" "}
-                  <a href="">Visit The Line.</a>
+                  <a
+                    href="https://the-line-restaurant.onrender.com"
+                    target="_blank"
+                  >
+                    Visit The Line.
+                  </a>
                 </p>
               </div>
             </div>
@@ -94,7 +99,12 @@ const ProjectWindow = ({ closeWindow }) => {
                 </p>
                 <p className={styles.projectLinks}>
                   Want to know how an interactive website feels like?{" "}
-                  <a href="">Visit My Shell Style Portfolio.</a>
+                  <a
+                    href="https://oscarrapale-shell-portfolio.onrender.com"
+                    target="_blank"
+                  >
+                    Visit My Shell Style Portfolio.
+                  </a>
                 </p>
               </div>
             </div>
@@ -108,7 +118,7 @@ const ProjectWindow = ({ closeWindow }) => {
                 />
               </div>
               <div className={styles.projectContent}>
-                <h3>Simple HTML/CSS Portfolio</h3>
+                <h3>Simple but Stylish HTML/CSS Portfolio</h3>
                 <p>
                   This is my personal portfolio website built with HTML,
                   designed to present my work <br /> and capabilities as a
@@ -116,8 +126,13 @@ const ProjectWindow = ({ closeWindow }) => {
                   project showcase. Including smooth animations. <br />
                 </p>
                 <p className={styles.projectLinks}>
-                  <a href="">Visit My Portfolio</a> to see my professional
-                  journey with a smooth flow.
+                  <a
+                    href="https://oscar-rapale-web-developer.onrender.com"
+                    target="_blank"
+                  >
+                    Visit My Portfolio
+                  </a>{" "}
+                  to see my professional journey with a smooth flow.
                 </p>
               </div>
             </div>
@@ -141,7 +156,10 @@ const ProjectWindow = ({ closeWindow }) => {
                 </p>
                 <p className={styles.projectLinks}>
                   If you ever find yourself in Ponce, Puerto Rico in need of a
-                  haircut, <a href="">Visit Jan Cuts</a>
+                  haircut,{" "}
+                  <a href="https://jan-cuts.onrender.com" target="_blank">
+                    Visit Jan Cuts
+                  </a>
                 </p>
               </div>
             </div>

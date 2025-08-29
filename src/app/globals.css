@@ -31,14 +31,14 @@ a {
 }
 
 .card {
-  background: rgba(255,255,255,0.4);
+  background: rgba(255,255,255,0.25); /* Increased opacity for better coverage */
   border-radius: 10px;
-  border: 1px solid rgba(255,255,255,0.4);
-  position: relative;
+  border: 1px solid rgba(255,255,255,0.25); /* Slightly more visible border */
   color: white;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  backdrop-filter: blur(50px) saturate(2) !important; /* Should work now! */
+  -webkit-backdrop-filter: blur(50px) saturate(2);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.3); /* Deeper shadow for depth */
+  position: relative;
   overflow-y: scroll;
   overflow-x: hidden;
   scrollbar-width: thin;
