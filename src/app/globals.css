@@ -1,22 +1,40 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #efe6de;
+  --foreground: #2d3232;
+  --card-bg: rgba(255, 255, 255, 0.25);
+  --card-border: rgba(255, 255, 255, 0.25);
+  --accent-color: #e0090c;
+  --wave-color: #9a0002;
+  --button-background: #c10609;
+  --button-border: #2d3232;
+  --title-background: rgba(69, 68, 68, 0.996);
+  --title-color: #ededed;
+  --os-intro: #9a0002;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: rgb(45, 155, 229);
-    --foreground: #ededed;
-  }
+
+.dark {
+  --background: #030f0f;
+  --foreground: #ededed;
+  --card-bg: rgba(20, 20, 20, 0.4);
+  --card-border: rgba(255, 255, 255, 0.25);
+  --accent-color: #00df82;
+  --wave-color: #03624c;
+  --button-background: #00df82c2;
+  --button-border: rgba(255, 255, 255, 0.25);
+  --title-background: rgba(36, 35, 35, 0.996);
+  --title-color: #ededed;
+  --os-intro: ##00df82;
 }
 
 body {
   color: var(--foreground);
-  background: #030f0f;
+  background: var(--background);
   font-family: var(--font-newrodinpro), Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow: hidden;
+  overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 * {
@@ -31,10 +49,10 @@ a {
 }
 
 .card {
-  background: rgba(255,255,255,0.25);
+  background: var(--card-bg);
   border-radius: 10px;
-  border: 1px solid rgba(255,255,255,0.25);
-  color: white;
+  border: 1px solid var(--card-border);
+  color: var(--foreground);
   backdrop-filter: blur(50px) saturate(2) !important;
   -webkit-backdrop-filter: blur(50px) saturate(2);
   box-shadow: 0 15px 35px rgba(0,0,0,0.3);
@@ -57,10 +75,4 @@ a {
   background: rgba(255,255,255,0.4);
   border: 1px solid rgba(255,255,255,0.4);
   border-radius: 5px;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
 }
