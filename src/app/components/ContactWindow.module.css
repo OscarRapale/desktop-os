@@ -57,7 +57,7 @@
 }
 
 .link:hover {
-    color: cyan;
+    color: #00df82;
 }
 
 .emailBtn {
@@ -70,6 +70,6 @@
 }
 
 .emailBtn:hover {
-    background-color: rgba(0, 255, 255, 0.564);
+    background-color: #00df82c2;
     transform: scale(1.1);
 }

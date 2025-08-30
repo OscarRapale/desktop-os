@@ -12,11 +12,11 @@
 
 body {
   color: var(--foreground);
-  background: var(--background);
+  background: #030f0f;
   font-family: var(--font-newrodinpro), Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 * {

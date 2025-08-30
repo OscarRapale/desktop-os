@@ -6,11 +6,11 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Wave
-        fill="#67dc4aff"
+        fill="#03624c"
         paused={false}
         className={styles.waveBackground}
         options={{
-          height: 450,
+          height: 500,
           amplitude: 20,
           speed: 0.15,
           points: 3,
