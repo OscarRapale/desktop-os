@@ -130,9 +130,9 @@ const ProjectWindow = ({ closeWindow }) => {
                     href="https://oscar-rapale-web-developer.onrender.com"
                     target="_blank"
                   >
-                    Visit My Portfolio
-                  </a>{" "}
-                  to see my professional journey with a smooth flow.
+                    Visit My Portfolio,
+                  </a>
+                    to see my professional journey with a smooth flow.
                 </p>
               </div>
             </div>

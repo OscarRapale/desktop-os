@@ -1,37 +1,37 @@
 .card {
-    width: 50vw;
-    height: 60vh;
-    margin: 0 auto;
-    margin-top: 10%;
-    display: flex;
-    flex-direction: column;
-    overflow-y: hidden;
+  width: 95vw;
+  height: 80vh;
+  margin: 10px auto;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: hidden;
 }
 
 .title {
-    position: sticky;
-    top: 0;
-    width: 100%;
-    height: 69px;
-    border: 1px solid rgba(58, 55, 55, 0.996);
-    border-radius: 10px 10px 0 0;
-    background: var(--title-background);
-    z-index: 10;
-    color: var(--title-color);;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-left: 2rem;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  border: 1px solid rgba(58, 55, 55, 0.996);
+  border-radius: 25px 25px 0 0;
+  background: var(--title-background);
+  z-index: 10;
+  color: var(--title-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  font-size: 1.1rem;
 }
 
 .audioToggle {
   background: none;
   border: none;
   color: var(--title-color);
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   cursor: pointer;
-  padding: 8px;
-  margin-right: 1.5rem;
+  padding: 10px;
   border-radius: 50%;
   transition: all 0.3s ease;
 }
@@ -41,64 +41,157 @@
   transform: scale(1.1);
 }
 
-.line 
-{
+.line {
   width: 100%;
-  height: 4px;
+  height: 3px;
   background-color: var(--accent-color);
   opacity: 0.7;
 }
 
 .intro {
-    text-align: center;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+  text-align: center;
+  margin: 2rem 1rem;
 }
 
 .intro h1 {
-    margin-bottom: 1px;
+  margin-bottom: 5px;
+  font-size: 1.8rem;
+}
+
+.intro p {
+  font-size: 0.9rem;
+  line-height: 1.4;
 }
 
 .intro span {
-    color: var(--accent-color);
+  color: var(--accent-color);
 }
 
 .windowsContainer {
   position: fixed;
-  top: 10%;
-  left: 10%;
+  top: 5%;
+  left: 2.5%;
   z-index: 1000;
-  max-width: 80vw; 
-  max-height: 80vh;
+  width: 95vw;
+  max-height: 90vh;
 }
 
 .iconsContainer {
-    display: grid;
-    grid-template-columns: repeat(4, 120px);
-    grid-template-rows: repeat(2, 30px);
-    justify-content: center;
-    align-items: center;
-    gap: 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.iconWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.iconWrapper:active {
+  transform: scale(0.95);
+  background: rgba(255, 255, 255, 0.2);
 }
 
 .icons {
-    font-size: 4rem;
-    font-family: inherit;
-    color: var(--foreground);
-    background: none;
-    border: none;
-    transition: transform 0.3s ease;
-    cursor: pointer;
+  font-size: 3rem;
+  font-family: inherit;
+  color: var(--foreground);
+  background: none;
+  border: none;
+  transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
 .icons:hover {
-    color: var(--accent-color);
-    transform: scale(1.2);
-    background: none;
-    border: none;
+  color: var(--accent-color);
+  transform: scale(1.1);
 }
 
 .iconTitle {
+  font-size: 0.9rem;
+  text-align: center;
+  color: var(--foreground);
+  font-weight: 500;
+}
+
+/* Tablet styles */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .card {
+    width: 70vw;
+    height: 70vh;
+    margin-top: 8%;
+  }
+
+  .iconsContainer {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+  }
+
+  .icons {
+    font-size: 3.5rem;
+  }
+
+  .intro h1 {
+    font-size: 2.2rem;
+  }
+}
+
+/* Desktop styles */
+@media (min-width: 1025px) {
+  .card {
+    width: 50vw;
+    height: 60vh;
+    margin-top: 10%;
+  }
+
+  .title {
+    height: 69px;
+    border-radius: 10px 10px 0 0;
+    padding-left: 2rem;
+    font-size: 1.2rem;
+  }
+
+  .iconsContainer {
+    grid-template-columns: repeat(4, 120px);
+    grid-template-rows: repeat(2, 30px);
+    gap: 2.5rem;
+  }
+
+  .iconWrapper {
+    background: none;
+    backdrop-filter: none;
+    padding: 0;
+  }
+
+  .iconWrapper:active {
+    transform: none;
+    background: none;
+  }
+
+  .icons {
+    font-size: 4rem;
+  }
+
+  .intro {
+    margin: 5rem 1rem;
+  }
+
+  .intro h1 {
+    font-size: 2.5rem;
+  }
+
+  .intro p {
     font-size: 1rem;
-    margin-top: -1rem;
+  }
 }

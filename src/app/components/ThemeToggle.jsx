@@ -38,12 +38,12 @@ const ThemeToggle = () => {
   
   const getTitle = () => {
     switch (theme) {
-      case 'light':
-        return 'Switch to dark mode'
-      case 'dark':
-        return 'Switch to system mode'
+      case "light":
+        return "Switch to dark mode"
+      case "dark":
+        return "Switch to system mode"
       default:
-        return 'Switch to light mode'
+        return "Switch to light mode"
     }
   }
 
@@ -52,22 +52,22 @@ const ThemeToggle = () => {
       onClick={cycleTheme}
       title={getTitle()}
       style={{
-        background: 'none',
-        border: 'none',
-        color: 'white',
-        fontSize: '1.5rem',
-        cursor: 'pointer',
-        padding: '8px',
-        borderRadius: '50%',
-        transition: 'all 0.3s ease'
+        background: "none",
+        border: "none",
+        color: "var(--os-intro)",
+        fontSize: "1.5rem",
+        cursor: "pointer",
+        padding: "8px",
+        borderRadius: "50%",
+        transition: "all 0.3s ease"
       }}
       onMouseEnter={(e) => {
-        e.target.style.background = 'rgba(255, 255, 255, 0.1)'
-        e.target.style.transform = 'scale(1.1)'
+        e.target.style.background = "rgba(255, 255, 255, 0.1)"
+        e.target.style.transform = "scale(1.1)"
       }}
       onMouseLeave={(e) => {
-        e.target.style.background = 'none'
-        e.target.style.transform = 'scale(1)'
+        e.target.style.background = "none"
+        e.target.style.transform = "scale(1)"
       }}
     >
       <FontAwesomeIcon icon={getIcon()} />

@@ -1,3 +1,4 @@
+/* Mobile-first approach - start with mobile styles */
 :root {
   --background: #efe6de;
   --foreground: #2d3232;
@@ -12,7 +13,6 @@
   --os-intro: #9a0002;
 }
 
-
 .dark {
   --background: #030f0f;
   --foreground: #ededed;
@@ -24,7 +24,7 @@
   --button-border: rgba(255, 255, 255, 0.25);
   --title-background: rgba(36, 35, 35, 0.996);
   --title-color: #ededed;
-  --os-intro: ##00df82;
+  --os-intro: #00df82;
 }
 
 body {
@@ -50,7 +50,7 @@ a {
 
 .card {
   background: var(--card-bg);
-  border-radius: 10px;
+  border-radius: 20px; /* Larger radius for mobile */
   border: 1px solid var(--card-border);
   color: var(--foreground);
   backdrop-filter: blur(50px) saturate(2) !important;
@@ -60,7 +60,7 @@ a {
   overflow-y: scroll;
   overflow-x: hidden;
   scrollbar-width: thin;
-  scrollbar-color: rgba(255,255,255,0.4) transparent;
+  scrollbar-color: var(--accent-color) transparent;
 }
 
 .card::-webkit-scrollbar {
@@ -72,7 +72,15 @@ a {
 }
 
 .card::-webkit-scrollbar-thumb {
-  background: rgba(255,255,255,0.4);
+  background: var(--accent-color);
   border: 1px solid rgba(255,255,255,0.4);
   border-radius: 5px;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 768px) {
+  .card {
+    border-radius: 25px;
+    margin: 10px;
+  }
 }

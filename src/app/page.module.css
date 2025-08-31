@@ -191,10 +191,52 @@ a.secondary {
   left: 20px;
   z-index: 10;
   color: var(--os-intro);
+  display: none;
 }
 
 .edition {
   display: flex;
   gap: 1rem;
   align-items: center;
+}
+
+.signature {
+  font-size: 12px;
+  font-style: italic;
+}
+
+@media (min-width: 768px) {
+  .osInfo {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .osInfo {
+    top: 15px;
+    left: 15px;
+  }
+  
+  .osInfo h1 {
+    font-size: 1.8rem;
+  }
+  
+  .osInfo h2 {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .osInfo {
+    top: 20px;
+    left: 20px;
+  }
+  
+  .osInfo h1 {
+    font-size: 2rem;
+  }
+  
+  .osInfo h2 {
+    font-size: 1.2rem;
+  }
 }
