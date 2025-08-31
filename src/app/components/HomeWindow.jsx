@@ -75,6 +75,8 @@ const HomeWindow = () => {
 
   const nodeRef = useRef(null);
 
+  const [isMobile, setIsMobile] = useState(false);
+
   const windowData = [
     {
       id: "about",
@@ -101,6 +103,17 @@ const HomeWindow = () => {
       content: <ContactWindow closeWindow={toggleWindow} />,
     },
   ];
+
+  useEffect(() => {
+    const checkScreenSize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    checkScreenSize();
+    window.addEventListener("resize", checkScreenSize);
+
+    return () => window.removeEventListener("resize", checkScreenSize);
+  }, []);
 
   return (
     <>
@@ -147,11 +160,19 @@ const HomeWindow = () => {
           (window) =>
             windows[window.id] &&
             createPortal(
-              <Draggable key={window.id} handle=".title" nodeRef={nodeRef}>
-                <div className={styles.windowsContainer} ref={nodeRef}>
+              isMobile ? (
+                // No dragging on mobile
+                <div key={window.id} className={styles.windowsContainer}>
                   {window.content}
                 </div>
-              </Draggable>,
+              ) : (
+                // Draggable on desktop/tablet
+                <Draggable key={window.id} handle=".title" nodeRef={nodeRef}>
+                  <div className={styles.windowsContainer} ref={nodeRef}>
+                    {window.content}
+                  </div>
+                </Draggable>
+              ),
               document.body
             )
         )}

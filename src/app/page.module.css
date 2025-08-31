@@ -187,10 +187,16 @@ a.secondary {
 
 .osInfo {
   position: fixed;
-  top: 20px;
-  left: 20px;
+  top: 30px;
+  right: 70px;
   z-index: 10;
   color: var(--os-intro);
+  display: block;
+}
+
+.osInfo h1,
+.osInfo h2,
+.osInfo p {
   display: none;
 }
 
@@ -200,13 +206,16 @@ a.secondary {
   align-items: center;
 }
 
-.signature {
-  font-size: 12px;
-  font-style: italic;
-}
-
 @media (min-width: 768px) {
   .osInfo {
+    top: 15px;
+    left: 15px;
+    right: auto;
+  }
+  
+  .osInfo h1,
+  .osInfo h2,
+  .osInfo p {
     display: block;
   }
 }

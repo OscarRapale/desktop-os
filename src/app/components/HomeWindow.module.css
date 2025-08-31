@@ -86,23 +86,6 @@
   padding: 1rem;
 }
 
-.iconWrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 1rem;
-  border-radius: 20px;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  transition: all 0.3s ease;
-}
-
-.iconWrapper:active {
-  transform: scale(0.95);
-  background: rgba(255, 255, 255, 0.2);
-}
-
 .icons {
   font-size: 3rem;
   font-family: inherit;
@@ -125,7 +108,10 @@
   font-weight: 500;
 }
 
-/* Tablet styles */
+.iconTitle:hover {
+  color: var(--accent-color);
+}
+
 @media (min-width: 768px) and (max-width: 1024px) {
   .card {
     width: 70vw;
@@ -147,7 +133,6 @@
   }
 }
 
-/* Desktop styles */
 @media (min-width: 1025px) {
   .card {
     width: 50vw;
