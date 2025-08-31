@@ -64,7 +64,6 @@
     font-size: 1.3rem;
 }
 
-/* Mobile: Stack skills in 2 columns */
 .skillList {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -85,7 +84,6 @@
     word-wrap: break-word;
 }
 
-/* Mobile: Stack tools in 2 columns */
 .toolList {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -120,7 +118,6 @@
     margin-bottom: 1rem;
 }
 
-/* Mobile: Stack project content vertically */
 .theLine, .shellfolio, .simplePortfolio, .jancuts {
     display: flex;
     flex-direction: column;
@@ -189,7 +186,6 @@
     transform: translateY(-2px);
 }
 
-/* Tablet styles */
 @media (min-width: 768px) and (max-width: 1024px) {
     .cardContainer {
         width: 85vw;
@@ -231,7 +227,6 @@
         font-size: 1rem;
     }
 
-    /* Tablet: 3 columns for tools */
     .toolList {
         grid-template-columns: repeat(3, 1fr);
         gap: 12px;
@@ -242,7 +237,6 @@
         font-size: 1rem;
     }
 
-    /* Tablet: Side-by-side projects with better spacing */
     .theLine, .shellfolio, .simplePortfolio, .jancuts {
         flex-direction: row;
         gap: 2rem;
@@ -272,7 +266,6 @@
     }
 }
 
-/* Desktop styles */
 @media (min-width: 1025px) {
     .cardContainer {
         width: 75vw;
@@ -305,7 +298,6 @@
         font-size: 1.5rem;
     }
 
-    /* Desktop: 6 columns for skills */
     .skillList {
         grid-template-columns: repeat(6, 140px);
         gap: 15px;
@@ -317,7 +309,6 @@
         border-radius: 10px;
     }
 
-    /* Desktop: 4 columns for tools */
     .toolList {
         grid-template-columns: repeat(4, 140px);
         gap: 15px;
@@ -334,7 +325,6 @@
         transform: scale(1.1);
     }
 
-    /* Desktop: Side-by-side projects */
     .theLine, .shellfolio, .simplePortfolio, .jancuts {
         flex-direction: row;
         gap: 2rem;

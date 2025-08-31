@@ -95,7 +95,6 @@
   }
 }
 
-/* Desktop */
 @media (min-width: 1025px) {
   .cardContainer {
     width: 40vw;

@@ -29,11 +29,21 @@ const HomeWindow = () => {
   });
 
   const [mounted, setMounted] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  // Individual refs for each window
+  const windowRefs = useRef({
+    about: React.createRef(),
+    links: React.createRef(),
+    projects: React.createRef(),
+    contact: React.createRef(),
+  });
 
   useEffect(() => {
     setMounted(true);
   }, []);
 
+  // Sound management
   const [audioEnabled, setAudioEnabled] = useState(true);
 
   const [playOpen] = useSound("/sounds/open-window.mp3", {
@@ -46,6 +56,7 @@ const HomeWindow = () => {
     volume: audioEnabled ? 0.3 : 0,
   });
 
+  // Toggling audio on and off
   const toggleAudio = () => {
     if (!audioEnabled) {
       playHover({ volume: 0 });
@@ -53,6 +64,7 @@ const HomeWindow = () => {
     setAudioEnabled(!audioEnabled);
   };
 
+  // Toggling windows open and close
   const toggleWindow = (id) => {
     if (audioEnabled) {
       if (!windows[id]) {
@@ -67,15 +79,12 @@ const HomeWindow = () => {
     }));
   };
 
+  // Hover sound effect for buttons and icons
   const buttonHoverEffect = () => {
     if (audioEnabled) {
       playHover();
     }
   };
-
-  const nodeRef = useRef(null);
-
-  const [isMobile, setIsMobile] = useState(false);
 
   const windowData = [
     {
@@ -104,6 +113,7 @@ const HomeWindow = () => {
     },
   ];
 
+  // Check for mobile width to disable draggable element
   useEffect(() => {
     const checkScreenSize = () => {
       setIsMobile(window.innerWidth < 768);
@@ -162,13 +172,24 @@ const HomeWindow = () => {
             createPortal(
               isMobile ? (
                 // No dragging on mobile
-                <div key={window.id} className={styles.windowsContainer}>
+                <div
+                  key={window.id}
+                  className={styles.windowsContainer}
+                  ref={windowRefs.current[window.id]}
+                >
                   {window.content}
                 </div>
               ) : (
-                // Draggable on desktop/tablet
-                <Draggable key={window.id} handle=".title" nodeRef={nodeRef}>
-                  <div className={styles.windowsContainer} ref={nodeRef}>
+                // Draggable on desktop/tablet with individual refs
+                <Draggable
+                  key={window.id}
+                  handle=".title"
+                  nodeRef={windowRefs.current[window.id]}
+                >
+                  <div
+                    className={styles.windowsContainer}
+                    ref={windowRefs.current[window.id]}
+                  >
                     {window.content}
                   </div>
                 </Draggable>
