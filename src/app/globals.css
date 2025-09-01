@@ -1,17 +1,16 @@
-/* Mobile-first approach - start with mobile styles */
 :root {
   --background: #efe6de;
   --foreground: #2d3232;
   --card-bg: rgba(255, 255, 255, 0.25);
   --card-border: rgba(255, 255, 255, 0.25);
-  /* --accent-color: #f5ddc8; */
+  --icon-color: #f5ddc8;
   --accent-color: #e0090c;
   --wave-color: #9a0002;
   --button-background: #c10609;
   --button-border: #2d3232;
   --title-background: rgba(69, 68, 68, 0.996);
   --title-color: #ededed;
-  --os-intro: #9a0002;
+  --os-intro: var(--wave-color);
 }
 
 .dark {
@@ -19,13 +18,14 @@
   --foreground: #ededed;
   --card-bg: rgba(20, 20, 20, 0.4);
   --card-border: rgba(255, 255, 255, 0.25);
+  --icon-color: var(--accent-color);
   --accent-color: #00df82;
   --wave-color: #03624c;
   --button-background: #00df82c2;
   --button-border: rgba(255, 255, 255, 0.25);
   --title-background: rgba(36, 35, 35, 0.996);
   --title-color: #ededed;
-  --os-intro: #00df82;
+  --os-intro: var(--accent-color);
 }
 
 body {
@@ -51,7 +51,7 @@ a {
 
 .card {
   background: var(--card-bg);
-  border-radius: 20px; /* Larger radius for mobile */
+  border-radius: 20px;
   border: 1px solid var(--card-border);
   color: var(--foreground);
   backdrop-filter: blur(50px) saturate(2) !important;
@@ -78,7 +78,6 @@ a {
   border-radius: 5px;
 }
 
-/* Responsive breakpoints */
 @media (max-width: 768px) {
   .card {
     border-radius: 25px;
