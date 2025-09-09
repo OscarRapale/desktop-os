@@ -202,7 +202,7 @@ _Fullstack Web Developer | Frontend Specialist | Creative Coder_
 
 ### Connect With Me
 
-- **Portfolio**: [aqua-os.com](https://www.aqua-os.dev/)
+- **Portfolio**: [aqua-os.dev](https://www.aqua-os.dev/)
 - **LinkedIn**: [linkedin.com/in/oscar-rapale](https://linkedin.com/in/oscar-rapale)
 - **GitHub**: [github.com/OscarRapale](https://github.com/OscarRapale)
 
