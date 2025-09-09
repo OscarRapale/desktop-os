@@ -15,6 +15,7 @@ const newRodin = localFont({
   variable: "--font-newrodinpro",
   display: "swap",
   preload: true,
+  adjustFontFallback: false,
 });
 
 export const metadata = {
