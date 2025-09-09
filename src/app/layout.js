@@ -2,6 +2,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { Providers } from "./providers/theme-provider";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const newRodin = localFont({
   src: [
@@ -30,6 +31,7 @@ export default function RootLayout({ children }) {
       <body className={`${newRodin.variable}`}>
         <Providers>{children}</Providers>
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
