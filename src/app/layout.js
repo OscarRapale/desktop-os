@@ -1,6 +1,7 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import { Providers } from "./providers/theme-provider";
+import { Analytics } from "@vercel/analytics/react";
 
 const newRodin = localFont({
   src: [
@@ -16,8 +17,11 @@ const newRodin = localFont({
 });
 
 export const metadata = {
-  title: "Aqua OS",
-  description: "Interactive Desktop Operating System Style Portfolio",
+  title: "AquaOS - Interactive Portfolio",
+  description: "Interactive Desktop Operating System Style Portfolio by Oscar Rapale",
+  keywords: "portfolio, web developer, React, Next.js, interactive design",
+  author: "Oscar Rapale",
+  viewport: "width=device-width, initial-scale=1.0",
 };
 
 export default function RootLayout({ children }) {
@@ -25,6 +29,7 @@ export default function RootLayout({ children }) {
     <html lang="en" suppressHydrationWarning>
       <body className={`${newRodin.variable}`}>
         <Providers>{children}</Providers>
+        <Analytics />
       </body>
     </html>
   );
