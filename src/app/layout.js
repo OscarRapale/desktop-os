@@ -16,6 +16,7 @@ const newRodin = localFont({
   display: "swap",
   preload: true,
   adjustFontFallback: false,
+  fallback: ['Arial', 'sans-serif'],
 });
 
 export const metadata = {
