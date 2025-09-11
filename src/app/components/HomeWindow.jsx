@@ -116,7 +116,7 @@ const HomeWindow = () => {
   // Check for mobile width to disable draggable element
   useEffect(() => {
     const checkScreenSize = () => {
-      setIsMobile(window.innerWidth < 768);
+      setIsMobile(window.innerWidth < 1025);
     };
 
     checkScreenSize();
@@ -180,7 +180,7 @@ const HomeWindow = () => {
                   {window.content}
                 </div>
               ) : (
-                // Draggable on desktop/tablet with individual refs
+                // Draggable on desktop with individual refs
                 <Draggable
                   key={window.id}
                   handle=".title"

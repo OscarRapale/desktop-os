@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import styles from "./AboutWindow.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleXmark } from "@fortawesome/free-solid-svg-icons";
@@ -18,12 +19,21 @@ const AboutWindow = ({ closeWindow }) => {
         </div>
         <div className={styles.line}></div>
         <div className={styles.cardHeader}>
-          <h1 className={styles.heading}>Oscar Rapale Méndez</h1>
-          <p>
-            Fullstack Web Developer, Frontend Specialist, Creative Coder <br />
-            From Puerto Rico
-          </p>
-          <img src="" alt="" />
+          <div className={styles.image}>
+            <Image
+              src="/images/profile-pic.webp"
+              alt="Drawing of a Gundam with glasses"
+              width={250}
+              height={250}
+            />
+          </div>
+          <div className={styles.headerContent}>
+            <h1>Oscar Rapale Méndez</h1>
+            <p>
+              Fullstack Web Developer, Frontend Specialist, Creative Coder, from
+              Puerto Rico
+            </p>
+          </div>
         </div>
         <div className={styles.cardBody}>
           <div className="skills">

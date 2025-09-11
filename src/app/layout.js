@@ -21,7 +21,7 @@ const newRodin = localFont({
 
 export const metadata = {
   title: "AquaOS - Interactive Portfolio",
-  description: "Interactive Desktop Operating System Style Portfolio by Oscar Rapale",
+  description: "Interactive Desktop Operating System Style Portfolio by Oscar Rapale Méndez",
   keywords: "portfolio, web developer, React, Next.js, interactive design",
   author: "Oscar Rapale",
   viewport: "width=device-width, initial-scale=1.0",
