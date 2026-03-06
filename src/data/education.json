@@ -1,0 +1,28 @@
+{
+  "formal_education": [
+    {
+      "institution": "Holberton Coding School Puerto Rico",
+      "program": "Foundations of Computer Science and Software Engineering",
+      "credential": "Certificate",
+      "year_completed": "2024",
+      "key_learnings": [
+        "Computer Science fundamentals",
+        "Software Engineering principles",
+        "Algorithm design and problem solving",
+        "Full-stack web development",
+        "Collaborative coding and peer learning"
+      ],
+      "description": "Intensive, project-based coding school focused on practical software engineering skills and computer science fundamentals."
+    }
+  ],
+  "certifications": [],
+  "online_courses": [],
+  "self_taught_skills": [
+    "Advanced React patterns",
+    "Next.js framework",
+    "Creative coding and animations",
+    "UI/UX design principles",
+    "Figma for web design"
+  ],
+  "learning_approach": "I'm a self-directed learner who combines formal education with hands-on project work. I believe in learning by building and constantly experimenting with new technologies."
+}

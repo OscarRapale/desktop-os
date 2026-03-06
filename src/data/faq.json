@@ -1,0 +1,54 @@
+{
+  "faqs": [
+    {
+      "question": "What is Oscar's experience level?",
+      "category": "experience",
+      "answer": "Oscar is a Fullstack Developer with a focus on Frontend work, who graduated from Holberton Coding School in 2024. While relatively early in his career, he's already built an impressive portfolio of projects showcasing both client work and creative personal projects. His strength lies in combining strong technical fundamentals with creative problem-solving."
+    },
+    {
+      "question": "What makes Oscar unique as a developer?",
+      "category": "uniqueness",
+      "answer": "Oscar stands out by blending technical excellence with creative vision. He doesn't just build functional websites - he creates experiences with personality. From desktop OS-themed portfolios to terminal-style interfaces, his work shows innovation and attention to user experience. Plus, he brings a unique Puerto Rican perspective and passion for gamification to every project."
+    },
+    {
+      "question": "Is Oscar available for freelance work?",
+      "category": "availability",
+      "answer": "Yes! Oscar is available for web development projects, especially those involving React, Next.js, or creative frontend work. He's particularly interested in projects that combine technical challenges with creative design. For inquiries, reach out via email at oscarrapale@gmail.com or connect on LinkedIn at linkedin.com/in/oscar-rapale."
+    },
+    {
+      "question": "What projects has Oscar worked on?",
+      "category": "projects",
+      "answer": "Oscar has built several notable projects: The Line (a tribute to The Bear TV series), a terminal-style portfolio, a clean HTML/CSS portfolio, and Jan Cuts (a client project for a barber). Each project showcases different skills - from vanilla JavaScript mastery to React and Chakra UI, and demonstrates his range as a developer."
+    },
+    {
+      "question": "What are Oscar's strongest skills?",
+      "category": "skills",
+      "answer": "Oscar specializes in Frontend Development with strong skills in React, Next.js, HTML, CSS, and JavaScript. He's particularly good at creating interactive, visually engaging experiences, responsive design, and UI/UX implementation. On the backend, he has experience with Python, Flask, Django, MongoDB, and PostgreSQL. His creative coding and gamification skills set him apart."
+    },
+    {
+      "question": "Where did Oscar study?",
+      "category": "education",
+      "answer": "Oscar graduated from Holberton Coding School Puerto Rico in 2024, where he completed a certificate in Foundations of Computer Science and Software Engineering. Beyond formal education, he's a passionate self-directed learner who constantly experiments with new technologies and builds projects to expand his skills."
+    },
+    {
+      "question": "Can Oscar work remotely?",
+      "category": "availability",
+      "answer": "Yes! Oscar is based in Puerto Rico and works remotely. He's experienced with remote collaboration, version control (Git/GitHub), and project management tools. His portfolio demonstrates his ability to deliver quality work independently."
+    },
+    {
+      "question": "What technologies does Oscar work with?",
+      "category": "skills",
+      "answer": "On the frontend: React, Next.js, HTML5, CSS3, JavaScript (ES6+), CSS Modules, SCSS, Chakra UI, and Framer Motion. On the backend: Python, Flask, Django, MongoDB, and PostgreSQL. He also uses Figma for design, Vercel and Render for deployment, and is currently learning AI integration."
+    },
+    {
+      "question": "What kind of projects is Oscar interested in?",
+      "category": "interests",
+      "answer": "Oscar is most excited about projects that combine technical challenges with creative design. He loves building interactive web experiences, gamification features, unique UI/UX implementations, and anything where design and development intersect. He's particularly interested in projects with personality and innovation."
+    }
+  ],
+  "common_redirects": {
+    "general_coding_help": "I'm here specifically to talk about Oscar and his work! For general coding help, I'd recommend Stack Overflow or relevant documentation. But feel free to ask about Oscar's projects, skills, or experience!",
+    "off_topic": "I'm here to talk about Oscar and his portfolio! Feel free to ask about his projects, skills, background, or how to get in touch for work opportunities.",
+    "other_people": "I only have information about Oscar Rapale Méndez and his work. Is there something specific you'd like to know about Oscar's projects or skills?"
+  }
+}

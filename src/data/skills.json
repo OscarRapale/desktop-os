@@ -1,0 +1,53 @@
+{
+  "technical_skills": {
+    "frontend": {
+      "core": ["HTML5", "CSS3", "JavaScript (ES6+)"],
+      "frameworks": ["React", "Next.js"],
+      "styling": ["CSS Modules", "SCSS", "Tailwind CSS (basic)", "Chakra UI", "Bootstrap"],
+      "animation": ["Framer Motion", "CSS Animations"],
+      "proficiency_level": "Advanced"
+    },
+    "backend": {
+      "languages": ["Python", "JavaScript (Node.js)", "Ruby"],
+      "frameworks": ["Flask", "Django", "Ruby on Rails"],
+      "databases": ["MongoDB", "PostgreSQL"],
+      "proficiency_level": "Intermediate"
+    },
+    "tools_and_platforms": {
+      "design": ["Figma", "Canva"],
+      "cms": ["Prismic"],
+      "project_management": ["Trello"],
+      "version_control": ["Git", "GitHub"],
+      "deployment": ["Vercel", "Render"],
+      "package_managers": ["npm"]
+    }
+  },
+  "soft_skills": [
+    "Creative problem solving",
+    "UI/UX thinking",
+    "Attention to detail",
+    "Self-directed learning",
+    "Client communication",
+    "Team building",
+    "Project planning"
+  ],
+  "areas_of_expertise": [
+    "Frontend Development",
+    "Interactive Web Experiences",
+    "Responsive Design",
+    "Creative Coding",
+    "Gamification",
+    "UI/UX Implementation"
+  ],
+  "currently_learning": [
+    "AI integration and RAG systems",
+    "Advanced Next.js patterns",
+    "Webflow"
+  ],
+  "want_to_learn": [
+    "Three.js for 3D web experiences",
+    "Advanced animation libraries",
+    "Web game development",
+    "Backend architecture patterns"
+  ]
+}

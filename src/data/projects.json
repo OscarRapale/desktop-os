@@ -1,0 +1,117 @@
+{
+  "projects": [
+    {
+      "id": "the-line",
+      "name": "The Line",
+      "tagline": "A Tribute to The Bear TV Series",
+      "description": "A modern, responsive restaurant website for 'The Line', a fine dining establishment set in Chicago's River North neighborhood. Built as a loving tribute to the TV show 'The Bear', this project showcases elegant design, smooth animations, and a sophisticated user experience using only vanilla technologies.",
+      "technologies": ["HTML5", "CSS3", "JavaScript (Vanilla)"],
+      "key_features": [
+        "Fully responsive design for all devices",
+        "Smooth scroll animations and transitions",
+        "Custom interactive menu showcase",
+        "Elegant typography and layout inspired by fine dining aesthetics",
+        "Vanilla JavaScript (no frameworks) for optimal performance"
+      ],
+      "highlights": [
+        "Built entirely with vanilla HTML, CSS, and JavaScript - no frameworks needed",
+        "Demonstrates strong fundamentals in web development",
+        "Tribute to the acclaimed TV series 'The Bear'",
+        "Focuses on user experience and visual storytelling"
+      ],
+      "live_url": "https://the-line-restaurant.onrender.com",
+      "github_url": null,
+      "category": "Web Development",
+      "project_type": "Personal Project / Tribute",
+      "completion_year": "2025",
+      "what_i_learned": "This project reinforced my vanilla JavaScript skills and taught me the importance of thoughtful design in creating immersive web experiences. It also showed me how technical excellence and creative vision can work together."
+    },
+    {
+      "id": "shellfolio",
+      "name": "Shell Style Portfolio",
+      "tagline": "Portfolio Meets Terminal Interface",
+      "description": "An interactive portfolio website that simulates a terminal/command-line interface. Instead of traditional navigation, visitors interact with my professional information through terminal commands, creating a unique and engaging experience for developers and tech enthusiasts.",
+      "technologies": ["JavaScript (Vanilla)", "HTML5", "CSS3"],
+      "key_features": [
+        "Fully functional terminal emulator in the browser",
+        "Custom command parser and executor",
+        "Command history and autocomplete",
+        "Help system and command discovery",
+        "Responsive design that works on all devices",
+        "Realistic terminal aesthetics and animations"
+      ],
+      "highlights": [
+        "Unique, interactive approach to a portfolio website",
+        "Built from scratch with vanilla JavaScript",
+        "Demonstrates strong understanding of DOM manipulation and event handling",
+        "Creative way to present professional information"
+      ],
+      "live_url": "https://oscarrapale-shell-portfolio.onrender.com",
+      "github_url": null,
+      "category": "Web Development",
+      "project_type": "Personal Portfolio",
+      "completion_year": "2025",
+      "what_i_learned": "Building a terminal emulator taught me deep JavaScript fundamentals including event handling, state management, and creating engaging user interactions without frameworks."
+    },
+    {
+      "id": "simple-portfolio",
+      "name": "Simple but Stylish HTML/CSS Portfolio",
+      "tagline": "Clean Design, Smooth Flow",
+      "description": "A clean, professional portfolio website built with HTML and CSS. This project serves as a digital resume and showcase, presenting my work and capabilities through elegant design and smooth animations. It emphasizes accessibility, performance, and a polished user experience.",
+      "technologies": ["HTML5", "CSS3"],
+      "key_features": [
+        "Minimalist, professional design",
+        "Smooth scroll animations",
+        "Fully responsive across all devices",
+        "Optimized for fast loading times",
+        "Clean, semantic HTML structure",
+        "CSS animations and transitions for polish"
+      ],
+      "highlights": [
+        "Demonstrates strong HTML/CSS fundamentals",
+        "Focus on clean code and performance",
+        "Professional presentation of work and skills",
+        "Accessible and SEO-friendly structure"
+      ],
+      "live_url": "https://oscar-rapale-web-developer.onrender.com",
+      "github_url": null,
+      "category": "Web Development",
+      "project_type": "Personal Portfolio",
+      "completion_year": "2024",
+      "what_i_learned": "This project taught me that sometimes simplicity is the most powerful approach. Strong fundamentals in HTML and CSS can create beautiful, performant websites without JavaScript frameworks."
+    },
+    {
+      "id": "jan-cuts",
+      "name": "Jan Cuts Portfolio",
+      "tagline": "Professional Barber Portfolio",
+      "description": "A modern, professional portfolio website built for a barber in Ponce, Puerto Rico. This client project showcases the barber's skills, services, and work through an elegant, user-friendly interface. Designed in Figma and built with React and Chakra UI, it demonstrates my ability to deliver client-focused solutions.",
+      "technologies": ["React", "Chakra UI", "Figma", "JavaScript"],
+      "key_features": [
+        "Custom design created in Figma",
+        "Responsive design optimized for mobile booking",
+        "Service showcase with pricing",
+        "Gallery of barber's work",
+        "Contact and booking information",
+        "Smooth animations and transitions"
+      ],
+      "highlights": [
+        "Real client project delivering business value",
+        "Full design-to-development workflow (Figma → React)",
+        "Demonstrates ability to work with clients and understand their needs",
+        "Built with modern React and component library (Chakra UI)",
+        "Focus on conversion and user engagement"
+      ],
+      "live_url": "https://jan-cuts.onrender.com",
+      "github_url": null,
+      "category": "Web Development",
+      "project_type": "Client Project",
+      "completion_year": "2024",
+      "what_i_learned": "Working with a real client taught me the importance of understanding business needs, clear communication, and creating solutions that drive results. I also learned Chakra UI and improved my React component design skills."
+    }
+  ],
+  "project_stats": {
+    "total_projects": 4,
+    "technologies_used": ["HTML", "CSS", "JavaScript", "React", "Next.js", "Chakra UI", "Figma"],
+    "categories": ["Web Development", "UI/UX Design", "Client Work"]
+  }
+}

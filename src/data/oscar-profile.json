@@ -1,0 +1,31 @@
+{
+  "name": "Oscar Rapale Méndez",
+  "title": "Fullstack Web Developer, Frontend Specialist, Creative Coder",
+  "location": "Puerto Rico",
+  "bio": "Hello World! I'm Oscar, a web developer and creative coder from Puerto Rico! As a Fullstack Developer specialized in Frontend work, I love building interactive, visually engaging web experiences that combine technical excellence with creative design. I'm passionate about gamification, UI/UX, and creating unique digital experiences.",
+  "specialties": [
+    "Web Development & Design",
+    "App Development",
+    "Frontend Dynamic Designs",
+    "Backend Development",
+    "Gamification of Apps"
+  ],
+  "interests": [
+    "Studying new technologies and approaches",
+    "Game Development",
+    "UI/UX Design",
+    "Learning Concept Art"
+  ],
+  "currently_learning": [
+    "AI integration with Vercel AI SDK",
+    "Advanced Next.js patterns",
+    "Web design with Webflow"
+  ],
+  "available_for": [
+    "Fullstack web development projects",
+    "Frontend work",
+    "Creative coding projects",
+    "UI/UX design and implementation",
+    "Freelance and contract work"
+  ]
+}
