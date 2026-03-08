@@ -13,11 +13,13 @@ import {
   faLink,
   faVolumeHigh,
   faVolumeXmark,
+  faRobot,
 } from "@fortawesome/free-solid-svg-icons";
 import AboutWindow from "./AboutWindow";
 import ProjectWindow from "./ProjectWindow";
 import ContactWindow from "./ContactWindow";
 import LinksWindow from "./LinksWindow";
+import ChatWindow from "./ChatWindow";
 import styles from "./HomeWindow.module.css";
 
 const HomeWindow = () => {
@@ -26,6 +28,7 @@ const HomeWindow = () => {
     links: false,
     projects: false,
     contact: false,
+    chat: false,
   });
 
   const [mounted, setMounted] = useState(false);
@@ -37,6 +40,7 @@ const HomeWindow = () => {
     links: React.createRef(),
     projects: React.createRef(),
     contact: React.createRef(),
+    chat: React.createRef(),
   });
 
   useEffect(() => {
@@ -110,6 +114,12 @@ const HomeWindow = () => {
       title: "Contact",
       icon: <FontAwesomeIcon icon={faEnvelope} />,
       content: <ContactWindow closeWindow={toggleWindow} />,
+    },
+    {
+      id: "chat",
+      title: "Aqua AI",
+      icon: <FontAwesomeIcon icon={faRobot} />,
+      content: <ChatWindow closeWindow={toggleWindow} />,
     },
   ];
 

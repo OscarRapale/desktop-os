@@ -45,5 +45,5 @@ export async function POST(request) {
     maxTokens: 500,
   });
 
-  return result.toDataStreamResponse();
+  return result.toTextStreamResponse();
 }

@@ -44,7 +44,7 @@ export default function Home() {
             <ThemeToggle />
           </div>
         </div>
-        <p>Version 1.0.0</p>
+        <p>Version 1.5.0</p>
         <p className={styles.signature}>Oscar Rapale&apos;s OS Portfolio</p>
       </div>
       <HomeWindow />

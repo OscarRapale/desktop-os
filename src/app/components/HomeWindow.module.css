@@ -112,6 +112,11 @@
   color: var(--icon-color);
 }
 
+.icons:last-child {
+  grid-column: 1 / -1;
+  justify-self: center;
+}
+
 @media (min-width: 768px) and (max-width: 1024px) {
   .card {
     width: 70vw;
@@ -135,7 +140,7 @@
 
 @media (min-width: 1025px) {
   .card {
-    width: 50vw;
+    width: 55vw;
     height: 60vh;
     margin-top: 10%;
   }
@@ -148,9 +153,9 @@
   }
 
   .iconsContainer {
-    grid-template-columns: repeat(4, 120px);
+    grid-template-columns: repeat(5, 100px);
     grid-template-rows: repeat(2, 30px);
-    gap: 2.5rem;
+    gap: 2rem;
   }
 
   .iconWrapper {
@@ -166,6 +171,11 @@
 
   .icons {
     font-size: 4rem;
+  }
+
+  .icons:last-child {
+    grid-column: auto;
+    justify-self: auto;
   }
 
   .intro {
